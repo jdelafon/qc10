@@ -1,0 +1,397 @@
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}  % fleqn : left-align
+
+
+\begin{document}
+
+\begin{equation*}
+\mbox{Let} \qquad \alpha = 1/ \sqrt{2}
+\end{equation*}
+
+%----------------------------------------%
+
+\section{Eig(X)}
+
+\begin{equation*}
+\begin{aligned}
+| I - \lambda X |
+=
+\left|
+\begin{pmatrix}
+1 & 0 \\ 
+0 & 1 
+\end{pmatrix}
+- \lambda
+\begin{pmatrix}
+0 & 1 \\ 
+1 & 0 
+\end{pmatrix}
+\right|
+=
+\begin{vmatrix}
+1 & -\lambda \\ 
+-\lambda & 1 
+\end{vmatrix}
+= 1 - \lambda^2
+\Rightarrow
+\lambda = \pm 1
+\end{aligned}
+\end{equation*}
+
+% X, lambda = 1
+
+\begin{equation*}
+\begin{aligned}
+Xv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+0 & 1 \\ 
+1 & 0 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+b = a \\
+a = b
+\end{cases}
+\rightarrow
+v = 
+\alpha
+\begin{pmatrix}
+1 \\ 
+1 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+% X, lambda = -1
+
+\begin{equation*}
+\begin{aligned}
+Xv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+0 & 1 \\ 
+1 & 0 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+- \begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+b = -a \\
+a = -b
+\end{cases}
+\rightarrow
+v = 
+\alpha
+\begin{pmatrix}
+1 \\ 
+-1 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+%----------------------------------------%
+
+\section{Eig(Y)}
+
+\begin{equation*}
+\begin{aligned}
+| I - \lambda Y |
+=
+\left|
+\begin{pmatrix}
+1 & 0 \\ 
+0 & 1 
+\end{pmatrix}
+- \lambda
+\begin{pmatrix}
+0 & -i \\ 
+i & 0 
+\end{pmatrix}
+\right|
+=
+\begin{vmatrix}
+1 & \lambda i \\ 
+-\lambda i & 1 
+\end{vmatrix}
+= 1 - \lambda^2
+\Rightarrow
+\lambda = \pm 1
+\end{aligned}
+\end{equation*}
+
+% Y, lambda = 1
+
+\begin{equation*}
+\begin{aligned}
+Yv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+0 & -i \\ 
+i & 0 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+-ib = a \\
+ia = b
+\end{cases}
+\rightarrow
+v = 
+\alpha
+\begin{pmatrix}
+1 \\ 
+i 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+% Y, lambda = -1
+
+\begin{equation*}
+\begin{aligned}
+Yv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+0 & -i \\ 
+i & 0 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+- \begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+-ib = -a \\
+ia = -b
+\end{cases}
+\rightarrow
+v = 
+\alpha
+\begin{pmatrix}
+1 \\ 
+-i 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+%----------------------------------------%
+
+\section{Eig(Z)}
+
+\begin{equation*}
+\begin{aligned}
+| I - \lambda Z |
+=
+\left|
+\begin{pmatrix}
+1 & 0 \\ 
+0 & 1 
+\end{pmatrix}
+- \lambda
+\begin{pmatrix}
+1 & 0 \\ 
+0 & -1 
+\end{pmatrix}
+\right|
+=
+\begin{vmatrix}
+1 -\lambda & 0 \\ 
+0 & 1 + \lambda 
+\end{vmatrix}
+\Rightarrow
+\lambda = \pm 1
+\end{aligned}
+\end{equation*}
+
+% Z, lambda = 1
+
+\begin{equation*}
+\begin{aligned}
+Zv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+1 & 0 \\ 
+0 & -1 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+a = a \\
+-b = b
+\end{cases}
+\rightarrow
+v = 
+\begin{pmatrix}
+1 \\ 
+0
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+% Z, lambda = -1
+
+\begin{equation*}
+\begin{aligned}
+Zv & = 1 \cdot v \Leftrightarrow 
+\begin{pmatrix}
+1 & 0 \\ 
+0 & -1 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+- \begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+a = -a \\
+-b = -b
+\end{cases}
+\rightarrow
+v = 
+\begin{pmatrix}
+0 \\ 
+1 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+%----------------------------------------%
+
+\section{Eig(H)}
+
+\begin{equation*}
+\begin{aligned}
+| I - \lambda H |
+& =
+\left|
+\begin{pmatrix}
+1 & 0 \\ 
+0 & 1 
+\end{pmatrix}
+- \lambda \alpha
+\begin{pmatrix}
+1 & 1 \\ 
+1 & -1 
+\end{pmatrix}
+\right|
+=
+\begin{vmatrix}
+1 - \alpha \lambda & - \alpha \lambda \\ 
+- \alpha \lambda & 1 + \alpha \lambda 
+\end{vmatrix} \\
+& =
+1 - (\alpha \lambda)^2  - (\alpha \lambda)^2 = 1 - \lambda^2
+\Rightarrow
+\lambda = \pm 1
+\end{aligned}
+\end{equation*}
+
+% H, lambda = 1
+
+\begin{equation*}
+\begin{aligned}
+Hv & = 1 \cdot v \Leftrightarrow 
+\alpha
+\begin{pmatrix}
+1 & 1 \\ 
+1 & -1 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+\alpha (a + b) = a \\
+\alpha (a - b) = b
+\end{cases} \\
+& \rightarrow
+v = 
+\begin{pmatrix}
+1 \\ 
+\sqrt{2} - 1
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+% H, lambda = -1
+
+\begin{equation*}
+\begin{aligned}
+Hv & = 1 \cdot v \Leftrightarrow 
+\alpha 
+\begin{pmatrix}
+1 & 1 \\ 
+1 & -1 
+\end{pmatrix}
+\begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+=
+- \begin{pmatrix}
+a \\ 
+b 
+\end{pmatrix}
+\Leftrightarrow 
+\begin{cases}
+\alpha (a + b) = -a \\
+\alpha (a - b) = -b
+\end{cases} \\
+& \rightarrow
+v = 
+\begin{pmatrix}
+1 \\ 
+\sqrt{2} + 1 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+
+
+\end{document}

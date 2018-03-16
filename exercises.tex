@@ -1,0 +1,62 @@
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}  % fleqn : left-align
+
+
+\begin{document}
+
+\section{Exercise 4.5 (p.175)}
+
+\begin{equation*}
+\begin{aligned}
+(\hat{n} \cdot \vec{\sigma}) 
+&= 
+\begin{pmatrix} a \\ b \\ c \end{pmatrix}
+\begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
+= aX + bY + cZ \\
+&= a
+\begin{pmatrix}
+0 & 1 \\ 
+1 & 0 
+\end{pmatrix}
++ b
+\begin{pmatrix}
+0 & -i \\ 
+i & 0 
+\end{pmatrix}
++ c
+\begin{pmatrix}
+1 & 0 \\ 
+0 & -1 
+\end{pmatrix}
+=
+\begin{pmatrix}
+c & (a-b) \\ 
+(a+ib) & -c 
+\end{pmatrix}
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+(\hat{n} \cdot \vec{\sigma})^2
+&= 
+\begin{pmatrix}
+c & (a-b) \\ 
+(a+ib) & -c 
+\end{pmatrix}
+\begin{pmatrix}
+c & (a-b) \\ 
+(a+ib) & -c 
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+c^2 + a^2 + b^2 & 0 \\ 
+0 & c^2 + a^2 + b^2
+\end{pmatrix}
+= I
+\end{aligned}
+\end{equation*}
+
+\end{document}
