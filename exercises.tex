@@ -2,11 +2,27 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage[fleqn]{amsmath}  % fleqn : left-align
+\usepackage{braket}
 
 
 \begin{document}
 
-\section{Exercise 4.5 (p.175)}
+\section{Exercise 2.68 p.96: Entanglement}
+
+Prove that $\ket{\phi} := \frac{\ket{00} + \ket{11}}{\sqrt{2}} \neq \ket{a}\ket{b}$ for all single qubit states $\ket{a}$ and $\ket{b}$.
+
+\begin{equation*}
+\begin{aligned}
+\ket{a}\ket{b} 
+&= (a_0 \ket{0} + a_1 \ket{1}) \otimes (b_0 \ket{0} + b_1 \ket{1})
+= a_0b_0 \ket{00} + a_1b_1 \ket{11} + a_0b_1 \ket{01} + a_1b_0 \ket{10} \\
+&= \ket{\phi} \Rightarrow a_0b_1 = 0 \quad\mbox{or}\quad a_1b_0 = 0
+\end{aligned}
+\end{equation*}
+\\
+but if one of the coefficients is null, then $a_ob_0$ or $a_1b_1$ will be null as well, and we cannot obtain $\ket{\phi}$.
+
+\section{Exercise 4.5 p.175}
 
 \begin{equation*}
 \begin{aligned}
